@@ -80,7 +80,7 @@ def get_single_result(ms, m, method, params, w1 = None, h1 = None, w2 = None, h2
                                                 cv2.RANSAC, 
                                                 params['inl_th'],
                                                 confidence=params['conf'])
-    if method == 'kornia':
+    elif method == 'kornia':
         #mask = ms <= params['match_th']
         #tentatives = m[mask]
         #tentative_idxs = np.arange(len(mask))[mask]
